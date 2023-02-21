@@ -1,0 +1,19 @@
+#include<stdio.h>
+main()
+{
+	int n,r,s=0,temp;
+	printf("enter the value of n\n");
+	scanf("%d",&n);
+	temp=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s+(r*r*r);
+		n=n/10;
+	}
+	if(s==temp)
+	printf("given number is arm strong");
+	else
+	printf("given number is not arm strong");
+	
+}
