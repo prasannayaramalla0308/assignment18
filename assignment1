@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+	char str1[20],str2[20];
+	int n;
+	printf("enter the string\n");
+	gets(str1);
+	strcpy(str2,str1);
+	strrev(str2);
+	n=strcmp(str1,str2);
+	if(n==0)
+	printf("palindorme");
+	else
+	printf("not palindorme");
+}
